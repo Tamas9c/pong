@@ -57,10 +57,14 @@ w.onkey(b_fel,"w")
 w.onkey(j_le,"Down")    
 w.onkey(j_fel,"Up")
 
+a=1
+
 w.listen()
 while True:
     w.update()
     
+    l.setx(l.xcor()+a)
+    l.sety(l.ycor()+a)
     
 
     
