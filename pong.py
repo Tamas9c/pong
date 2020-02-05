@@ -37,10 +37,25 @@ def b_le():
     if y > -330:
         y = y - 100
     b.sety(y)
-    
+
+def j_fel():
+    y = j.ycor()
+    if y < 330:
+        y = y + 100
+    j.sety(y)
+   
+
+def j_le():
+    y = j.ycor()
+    if y > -330:
+        y = y - 100
+    j.sety(y)    
+
+
 w.onkey(b_le,"s")    
 w.onkey(b_fel,"w")
-
+w.onkey(j_le,"Down")    
+w.onkey(j_fel,"Up")
 
 w.listen()
 while True:
