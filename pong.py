@@ -58,13 +58,15 @@ w.onkey(j_le,"Down")
 w.onkey(j_fel,"Up")
 
 a=1
-
+b=1
 w.listen()
 while True:
     w.update()
     
     l.setx(l.xcor()+a)
-    l.sety(l.ycor()+a)
+    l.sety(l.ycor()+b)
     
-
+    if l.ycor() > 100:
+        l.sety(100)
+        b=b*-1
     
