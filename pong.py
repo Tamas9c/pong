@@ -70,3 +70,6 @@ while True:
         l.sety(100)
         b=b*-1
     
+    if l.ycor() < -100:
+        l.sety(-100)
+        b=b*-1
