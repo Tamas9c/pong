@@ -51,19 +51,19 @@ def b_le():
         y = y - 100
     bü.sety(y)  
 
-#mozgás billentyre tétele
+#mozgás billentyűre tétele
 w.onkey(b_le,"s")    
 w.onkey(b_fel,"w")
 w.onkey(j_le,"Down")    
 w.onkey(j_fel,"Up")
 
-y=1
-x=1
+y2=1
+x2=1
 w.listen()
 while True:
     
-    l.setx(l.xcor()+x)
-    l.sety(l.ycor()+y)
+    l.setx(l.xcor()+x2)
+    l.sety(l.ycor()+y2)
     
     if l.ycor() > 300:
         l.sety(300)
