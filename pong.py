@@ -72,4 +72,10 @@ while True:
     if l.ycor() < -300:
         l.sety(-300)
         b=b*-1
+    if j.xcor()-30 < l.xcor() < j.xcor() and j.ycor()-50 < l.ycor() < j.ycor()+50: 
+        l.setx(j.xcor()-30)
+        x2=x2*-1
     
+    if bü.xcor()-30 < l.xcor() < bü.xcor() and bü.ycor()-50 < l.ycor() < bü.ycor()+50: 
+        l.setx(bü.xcor()-30)
+        x2=x2*-1
