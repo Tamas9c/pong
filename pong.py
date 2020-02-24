@@ -3,11 +3,11 @@ w = turtle.Screen()
 bü = turtle.Turtle()
 
 # bal ütő
-bü.shape("square")
-bü.shapesize(5,1)
-bü.color("brown")
-bü.penup()
-bü.goto(-460,0)
+b.shape("square")
+b.shapesize(5,1)
+b.color("brown")
+b.penup()
+b.goto(-460,0)
 
 #jobb ütő
 j = turtle.Turtle()
@@ -40,16 +40,16 @@ def j_le():
     j.sety(y)    
 
 def b_fel():
-    y = bü.ycor()
+    y = b.ycor()
     if y < 330:
         y = y + 100
-    bü.sety(y)
+    b.sety(y)
    
 def b_le():
-    y = bü.ycor()
+    y = b.ycor()
     if y > -330:
         y = y - 100
-    bü.sety(y)  
+    b.sety(y)  
 
 #mozgás billentyűre tétele
 w.onkey(b_le,"s")    
@@ -76,6 +76,6 @@ while True:
         l.setx(j.xcor()-30)
         x2=x2*-1
     
-    if bü.xcor()+30 > l.xcor() > bü.xcor() and bü.ycor()-50 < l.ycor() < bü.ycor()+50: 
-        l.setx(bü.xcor()+30)
+    if b.xcor()+30 > l.xcor() > b.xcor() and b.ycor()-50 < l.ycor() < b.ycor()+50: 
+        l.setx(b.xcor()+30)
         x2=x2*-1
